@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>layout test</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		
+	body{ padding:0px;
+			margin: 0px;
+	}
+	.container*{
+		margin: 0 auto;
+		max-width: 1000px;
+	}
+	.container>header{
+		background-color: pink;
+		height: 0px;
+		padding-bottom: 20%;
+	}
+	.container>nav{
+		background-color: red;
+		line-height: 40px;
+	}
+	.container>article{
+		background-color: gray;
+		float: left;
+		width: 75%;
+		min-height: 300px;
+	}
+	.container>aside{
+		background-color: blue;
+		float: left;
+		width: 25%;
+		min-height: 300px;
+	}
+	.container>footer{
+		background-color: green;
+		height: 50px;
+		text-align: center;
+		font-variant: small-caps;
+		clear: both;
+	}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<header>Header</header>
+		<nav>nav</nav>
+		<article>article</article>
+		<aside>aside</aside>
+		<footer>footer</footer>
+	</div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>layout</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		
+		body{
+			padding: 0px;
+			margin: 0px;
+			}			/*để xoá các khoảng hở*/
+		}
+		/*.containner>*{width: 100px; border:1px solid red;ban đầu viết dưới dạng các hộp dễ hình dung,sau xoá css này đi*/
+
+		}
+		.container>*{
+			max-width: 1000px;
+			margin: 0 auto;
+		}
+		.container>header{
+			background-color: gray;
+			background-image: url('image/logo.png');
+			background-size: cover;
+			/*thuộc tính cover để kích thước ảnh nền bao chùm vùng header*/
+			height: 0px;
+			padding-bottom: 25%;
+			/*một kỹ thuật rất quan trọng là đặt height: 0px và gia tăng padding-bottom 25%* con số 25% là tỉ lệ chiều cao/chiều rộng của ảnh nền*/
+		}
+		.container>nav{
+			background-color: orange;
+			line-height: 40px;
+		}
+		.container>article{
+			background-color: pink;
+			float: left;
+			width: 75%;
+			min-height: 250px;
+
+		}
+		.container>aside{
+			background-color: blue;
+			float: right;
+			width: 25%;
+			min-height: 250px;
+		}
+		.container>footer{
+			background-color: green;
+			clear: both;
+			height: 50px;
+			border-top: 5px double orangered;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<header>header</header>
+		<nav>nav</nav>
+		<article>article</article>
+		<aside>aside</aside>
+		<footer>footer</footer>
+	</div>
+</body>
+</html>
